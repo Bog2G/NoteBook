@@ -11,17 +11,24 @@
     </div>
   <% end %>
 
+<div class="container" style="margin-bottom: 10%;margin-top: 2%;margin-left: 6%;margin-right: 15%; ">
   <div>
     <%= form.label :note_title, style: "display: block" %>
-    <%= form.text_field :note_title, :maxlength => 15 %>
+    <%= form.text_field :note_title, :maxlength => 15, :style=>"border-top-width: 0;border-bottom-width: 2;border-right-width:
+    0;border-left-width: 0; outline-width: 0; width: 90%;" %>
   </div>
 
   <div>
     <%= form.label :note_content, style: "display: block" %>
-    <%= form.text_area :note_content %>
+    <%= form.text_area :note_content, :style=>"border-top-width: 0;border-bottom-width: 0;border-right-width: 2;
+    border-left-width: 2; outline-width: 0; resize: none; width: 90%; height: 650px" %>
   </div>
 
   <div>
     <%= form.submit %>
   </div>
 <% end %>
+</div>
+
+
+
