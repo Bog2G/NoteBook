@@ -14,13 +14,13 @@
   <div>
     <%= form.label :note_title, style: "display: block" %>
     <%= form.text_field :note_title, :maxlength => 15, :style=>"border-top-width: 0;border-bottom-width: 2;border-right-width:
-    0;border-left-width: 0; outline-width: 0; width: 90%;" %>
+    0;border-left-width: 0; outline-width: 0; width: 90%; " %>
   </div>
 
   <div>
     <%= form.label :note_content, style: "display: block" %>
     <%= form.text_area :note_content, :style=>"border-top-width: 0;border-bottom-width: 2;border-right-width: 2;
-    border-left-width: 2; outline-width: 0; resize: none; width: 90%; height: 650px" %>
+    border-left-width: 2; outline-width: 0; resize: none; width: 90%; height: 650px;" %>
   </div>
   <div class="field form-group">
     <%= form.number_field :user_id, id: :note_user_id, class: "form-control", value: current_user.id, type: :hidden %>
