@@ -10,11 +10,19 @@
 
 
 
-<div>
-  <%= link_to "Back to notes", notes_path %>
+<div class="text-center">
+  <div class="text-left">
+     <span  style="padding: 29%">
+    <%= link_to "Edit note", edit_note_path(@note), :style => "text-decoration: none; color: black;" %>
+  </span>
+    <span style="">
+    <%= link_to "Back to notes", notes_path , :style => "text-decoration: none; color: black;"%>
+  </span>
+  </div>
+
+
+  <%= button_to "Delete note", @note, method: :delete, :style => "border-radius: 23%" %>
 </div>
 
 
 
-<!--< %= link_to "Edit note", edit_note_path(@note) %> -->
-<!--  < %= button_to "Delete note", @note, method: :delete %> -->

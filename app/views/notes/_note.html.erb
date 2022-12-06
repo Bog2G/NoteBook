@@ -1,17 +1,20 @@
-<div class="card" style=" border-width: medium; height: 70px; width: 20%;
+<div class="card" style=" border-width: medium; height: 80px; width: 20%;
   margin: 1rem 1%;
   float: left;
   border-radius: .4rem;
-  position: relative; background: indigo ">
+  position: relative; background: #2E2F30; ">
 
 
-  <div class="card-body" style="cursor: pointer; " onclick="">
-    <%= link_to note.note_title, note, :class=>'stretched-link' %>
+  <div class="card-body text-center">
+    <%= link_to note.note_title, note, :style => "text-decoration: none; color: green; font-size: larger;" %>
   </div>
+
+
 </div>
 
 
-
+<!--< %= link_to "Edit note", edit_note_path(@note) %> -->
+<!--  -->
 
 
 
